@@ -8,89 +8,6 @@
     box-sizing: border-box;
 }
 
-/* General styles */
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #3a3a3a;
-    font-family: 'Archivo Narrow', sans-serif;
-}
-
-
-h1 {
-        font-family: 'Archivo Narrow', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        color: teal;
-    }
-h3 {
-        font-family: 'Archivo Narrow', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        color: teal;
-}
-h2 {
-    font-family: 'Archivo Narrow', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #252525;
-}
-/* Footer */
-#socialmedia {
-    text-align: center;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-#socialmedia i {
-    font-size: 160%;
-    padding: 20%;
-    color: #3a3a3a;
-}
-.hidden-heading {
-    display: none;
-}
-
-/* Header */
-header {
-    background-color: #ffffff;
-    color: #2d9d96;
-    /* Updated color */
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-#menu a {
-    color: teal;
-    /* Turquoise color for menu items */
-}
-
-header a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
-}
-
-#menu>li {
-    margin-bottom: 1em;
-}
-
-.active {
-    border-bottom: 1px solid turquoise;
-}
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -116,15 +33,107 @@ nav {
     font-size: 2rem;
 }
 
-/* Main content */
-main {
-    flex: 1 0 auto;
-    margin-top: 47px;
+/* < Credit - Code institute: Project Love Running */
+
+/* General styles */
+body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: #3a3a3a;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
-/* Hero section */
+h1 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: teal;
+}
+
+h2 {
+    font-family: 'Merriweather', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
+
+h3 {
+    font-family: 'Merriweather', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    color: teal;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    color: #2d9d96;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #2d9d96;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a {
+    color: teal;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid turquoise;
+}
+
+nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+}
+
+#menu {
+    display: flex;
+}
+
+#menu>li {
+    padding-left: 1rem;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+/* Text logo */
+#logo {
+    font-size: relative-size;
+    line-height: 75px;
+    margin: 0 0.5rem;
+}
+
+/* Main content - Hide heading */
+.hidden-heading {
+    display: none;
+}
+
 #hero {
     height: 500px;
     width: 100%;
@@ -132,144 +141,151 @@ main {
     position: relative;
 }
 
-/* Turquoise box for the hero section */
-#turquoise-box {
-    background-color: #2d9d96;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 40%;
-    /* Adjust the width as needed */
-    height: 40%;
-    border-top-left-radius: 30px;
-    /* Rounded corner on the top left */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#turquoise-box h2,
-#turquoise-box h3 {
-    color: #fff;
-    /* White text color */
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-}
-
-#cover-text {
-    background-color: rgb(64, 224, 208);
+#hero-box {
+    /* Common styles for both large and small screens */
+    background-color: rgba(0, 128, 128, .7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
-    left: 0;
-    width: 50%;
-    /* Adjust the width as needed */
-    min-height: 200px;
+    min-height: 150px;
     padding-top: 40px;
     padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+    /* Width for large screens (greater than or equal to 768px) */
+    width: 70%;
+}
+#motivation {
+    height: 500px;
+    width: 100%;
+    background: url("../images/activity.webp") no-repeat center center/cover;
+    position: relative;
 }
 
-#cover-text>h2,
-#cover-text>h3 {
+#motivation-box {
+    background-color: rgba(0, 128, 128, .7);
+    text-decoration: #ffffff;
+    font-size: 100%;
+    position: absolute;
+    bottom: 70px;
+    width: 80%;
+    min-height: 180px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#socialmedia {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#socialmedia i {
+    font-size: 160%;
+    padding: 5%;
+    color: teal;
+}
+
+/* Media query for small screens (less than 768px) */
+@media screen and (max-width: 767px) {
+    #hero-box {
+        width: 70%;
+        /* Adjust the width as needed for small screens */
+        left: 30px;
+        /* Position to the left for small screens */
+        right: auto;
+        /* Reset right positioning */
+    }
+}
+
+/* Media query for large screens (greater than or equal to 768px) */
+@media screen and (min-width: 768px) {
+    #hero-box {
+        width: 70%;
+        /* Adjust the width as needed for large screens */
+        right: 30px;
+        /* Position to the right for large screens */
+        left: auto;
+        /* Reset left positioning */
+    }
+
+#hero-box>h2,
+#hero-box>h3 {
     color: #ffffff;
 }
 
-/* Reasons section */
-#reasons {
-    width: 90%;
-    margin: 20px auto;
+#motivation-box>h2,
+#motivation-box>h3
+{
+    color: turquoise;
+}
+#motivation-box>p {
+color: white;
 }
 
-#reasons h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 280%;
-}
-
-#whys-life>div {
-    line-height: 20px;
-    margin-bottom: 20px;
-}
-
-#whys p {
-    padding: 0 20px;
-}
-
-#whys hr {
-    border-top: 1px solid #3a3a3a;
-    margin: 5px 0;
-}
-
-#weekly_planner-image {
-    background: url('../images/whys_runners_team.webp') no-repeat top center / cover;
-    height: 90vw;
-    width: 90vw;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-}
-
-#benefits-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* The Whys section */
-#times {
-    background: url('../images/whys_running.webp') no-repeat center/cover;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#times div {
-    color: #fafafa;
-    background-color: rgba(0, 0, 0, .6);
-    padding: 15px;
-    text-align: center;
-    flex-basis: 200px;
-    flex-grow: 1;
-    border: 2px solid white;
-}
-
-#times h3 {
-    color: #fafafa;
-}
-
-/* Gallery page */
-#photos img {
+#about {
+    height: 500px;
     width: 100%;
-    line-height: 1em;
+    background: url("../images/about.webp") no-repeat center center/cover;
+    background-position: 100%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+    position: relative;
 }
 
-#photos {
-    line-height: 0;
+/* Main content - Center */
+main {
+    flex: 1 0 auto;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content */
+main {
+    margin-top: 79px;
 }
 
 /* Form */
 #signup {
-    background-image: url("../images/hero.webp");
-    background-size: cover;
-    background-position: 75%;
+    height: 500px;
+    width: 100%;
+    background: url("../images/signup.webp") no-repeat center center/cover  ;
+    background-position: 100%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
+    position: relative;
 }
 
 #signup-form {
     color: #ffffff;
-    background-color: rgba(60, 60, 60, 0.6);
+    background-color: rgba(0, 128, 128, 0.80);
     padding: 30px;
 }
 
 #signup-form>h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#contact {
+    height: 500px;
+    width: 100%;
+    background: url("../images/squat.webp") no-repeat center center/cover;
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+    position: relative;
+}
+
+#contact-form {
+    color: #ffffff;
+    background-color: rgba(0, 128, 128, 0.80);
+    padding: 30px;
+}
+
+#contact-form>h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
@@ -291,112 +307,74 @@ main {
     justify-content: space-between;
 }
 
+/* Sign up - Submit Button  */
+
 .join-button {
     margin-top: 20px;
     border-radius: 2px;
     padding: 15px 32px;
     font-size: 100%;
-    background-color: #454b1b;
+    background-color: teal;
     color: #fafafa;
 }
-/* Text logo */
-    #logo {
-        font-size: 180%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    }
-
-    /* Main content */
-    main {
-        margin-top: 79px;
-    }
-
-    /* Schedule section */
-    #schedule,
-    #schedule_planner_boxes {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #schedule_planner>div,
-    #schedule_planner_boxes>div {
-        width: 75%;
-    }
-    #schedule_planner_boxes>div {
-        text-align: end;
-        align-self: flex-end;
-    }
 
 /* Extra Added Responsiveness. Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
-}
-@media screen and (min-width: 1200px) {
 
-    /* Schedule Section Responsiveness */
-    #schedule {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #schedule>div {
-        flex: 1;
-    }
-
-    #schedule-image {
-        order: 0;
-    }
-
-    #schedule-boxes {
-        order: 1;
-    }
-
-    #schedule_planner>div {
-        align-self: flex-start;
-    }
-
-    #scheduler>div {
-        align-self: flex-end;
-    }
-
-    /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-    #menu {
-        display: flex;
-    }
-
-    #menu>li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-    
-    /* To Troubleshoot */
-
-    /* Define the initial state of the icon */
-    .fa-beat-fade {
-        opacity: 1;
-        transition: opacity 50s ease-in-out;
-    }
-
-    /* Define the hover state for the icon */
-    .fa-beat-fade:hover {
-        opacity: 0.5;
-}
+    @media screen and (min-width: 1200px) {
 
 
+        /* Media query: tablets and larger (768px and up) */
+
+        @media screen and (min-width: 768px) {
+
+        }
+
+        .motivation ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .motivation ul li strong {
+            font-weight: bold;
+            color: teal;
+        }
+
+        /* Add padding for better readability on large text areas */
+
+        .content2-text {
+            padding: 20px;
+        }
+
+        /* Style headings for better emphasis */
+        h3 {
+            color: #333;
+            /* Dark gray color for headings */
+            margin-bottom: 10px;
+            /* Add space after each heading */
+        }
+
+        /* Style paragraphs for improved line-height */
+        p {
+            line-height: 1.5;
+            /* Increase line spacing for easier reading */
+        }
+
+        .centered-container {
+            text-align: center;
+        }
+
+        .copyright {
+            text-align: center;
+            /* Center-align the text */
+        }
+
+        /* Main content */
+       main {
+            /* Push main content down to accommodate larger header */
+            margin-top: 79px;
+            /* Footer */

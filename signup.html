@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tags for search engines -->
-    <meta name="description" content="Welcome to our premium Fitness Club here in Sweden - Fitness Club">
-    <meta name="keywords" content="fitness, studio, training, yoga, crossfit, health">
+    <meta name="description" content="Signup for Membership - Welcome to our premium Fitness Club in Sweden - Fitness Club">
+    <meta name="keywords" content="fitness, studio, club, gym, pt, training, yoga, crossfit, health, nutrition">
     <!-- Title -->
-    <title>Premium Fitness Club in Sweden - Fitness Club</title>
+    <title>Signup for membership - Premium Fitness Club in Sweden - Fitness Club</title>
     <!-- Favicon -->
     <link rel="icon" sizes="16x16" href="assets/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -24,7 +24,7 @@
         <!-- Header -->
         <!-- Credit Codeinstitute -->
         <a href="index.html">
-            <h1 id="logo">Fitness Club - Sweden</h1>
+            <h1 id="logo">Fitness Club</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
@@ -33,31 +33,21 @@
         <!-- End credit codeinstitute -->
         <nav>
             <ul id="menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html" class="active">Sign up</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
-    <!-- Main -->
-    <main>
-        <!-- Hero -->
-        <section id="hero">
-            <div id="hero-text">
-                <h2>Get fit today</h2>
-                <h1>Fitness Studio<h2>
-            </div>
-        </section>
 <!-- Main content -->
 <main>
   <section id="signup">
     <form
       id="signup-form"
       method="POST"
-      action="https://formdump.codeinstitute.net"
-    >
-      <h2><i class="fa-solid fa-heartbeat"></i> Let's get you signed up!</h2>
+      action="https://formdump.codeinstitute.net">
+      <h2><i class="fa-solid fa-dumbbell fa-bounce"></i> Signup - Start you membership Today!</h2>
       <label for="first_name">First Name</label>
       <input
         type="text"
@@ -84,7 +74,16 @@
         class="text-input"
         required
       />
-      <br />
+      <br/>
+
+    <!-- Age Span Selector -->
+    <label for="age_span">Select Age Span</label>
+    <select name="age_span" id="age_span" required>
+        <option value="20-40">20-40</option>
+        <option value="41-60">41-60</option>
+        <option value="61-70">61-70</option>
+    </select>
+    <br,br />
 
       <!-- Start Date Selector -->
       <label for="start_date">Start Date</label>
@@ -95,7 +94,7 @@
         class="date-input"
         required
       />
-      <br />
+      <br,br />
 
       <!-- Membership Options -->
       <label for="membership">Select Membership</label>
@@ -104,7 +103,7 @@
         <option value="standard">Standard (750 SEK/month)</option>
         <option value="premium">Premium (950 SEK/month)</option>
       </select>
-      <br />
+      <br,br, />
 
       <!-- Payment Frequency -->
       <label for="payment_frequency">Payment Frequency</label>
@@ -123,57 +122,52 @@
         value="annual"
         required
       />
-      <label for="annual">Annual</label>
+      <label for="annual">Annual (10% reduction)</label>
       <br />
-
-      <!-- Age Span Selector -->
-      <label for="age_span">Select Age Span</label>
-      <select name="age_span" id="age_span" required>
-        <option value="20-40">20-40</option>
-        <option value="41-60">41-60</option>
-        <option value="61-70">61-70</option>
-      </select>
-      <br />
-
+<br>
       <div class="radio-buttons">
         <div>
-          <label for="road">Road</label>
+          <label for="Online PT">Online Personal Trainer</label>
           <input
             type="radio"
-            name="running_preference"
-            id="road"
-            value="road"
+            name="Membership_selection"
+            id="Online Personal Trainer"
+            value="Online Personal Trainer"
             required
             checked
           />
         </div>
         <div>
-          <label for="trail">Trail</label>
+          <label for="On Site Personal Trainer">On Site PT</label>
           <input
             type="radio"
-            name="running_preference"
-            id="trail"
-            value="trail"
+            name="Membership_selection"
+            id="On Site Personal Trainer"
+            value="On Site Personal Trainer"
             required
+            checked
           />
         </div>
         <div>
-          <label for="both">Both</label>
+          <label for="No Personal Trainer - 20% Reduction">No Personal Trainer - 20% Reduction</label>
           <input
             type="radio"
-            name="running_preference"
-            id="both"
-            value="both"
+            name="Membership_selection"
+            id="No Personal Trainer - 20% Reduction"
+            value="No Personal Trainer - 20% Reduction"
             required
+            checked
           />
         </div>
       </div>
-      <button type="submit" class="join-button">Let's Run!</button>
+      <div class=centered-container>
+      <button type="submit" class="join-button">Activate yourself Now!</button>
     </form>
   </section>
 </main>
 <!-- Additional Footer Content -->
 <footer>
+<div class="social-media-container">
     <ul id="socialmedia">
         <li>
             <a href="https://www.facebook.com/" target="_blank" rel="noopener"
@@ -204,25 +198,13 @@
                 <i class="fa-brands fa-tiktok fa-beat-fade"></i>
             </a>
         </li>
-
-        <div></div>
-        </li>
     </ul>
-    <style>
-        h3 {
-            text-align: center;
-        }
-    </style>
-
-    <style>
-        h3 {
-            text-align: center;
-        }
-    </style>
-
-
-
-
-</footer>
+</div>
+<div class="copyright">
+    <p>&copy; 2023 Fitness Club - Sweden. All rights reserved.</p>
+</div>
+   </footer>
 <!-- Font Awesome kit -->
 <script src="https://kit.fontawesome.com/7dd2cb17e4.js" crossorigin="anonymous"></script>
+</body>
+</html>
