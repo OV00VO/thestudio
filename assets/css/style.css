@@ -121,7 +121,7 @@ nav {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("https://ov00vo.github.io/thestudio/images/hero.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/hero.webp") no-repeat center center/cover;
     position: relative;
 }
 
@@ -144,7 +144,7 @@ nav {
 
 #motivation {
     width: 90%;
-    background: url("https://ov00vo.github.io/thestudio/images/squat.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/squat.webp") no-repeat center center/cover;
     margin: 20px auto;
     padding-left: 1%;
     border-radius: 10px 25px 10px 25px;
@@ -163,7 +163,7 @@ nav {
 #footer {
     /* height: 600px; */
     width: 100%;
-    background: url("https://ov00vo.github.io/thestudio/images/footer.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/footer.webp") no-repeat center center/cover;
     /* opacity: 100%; */
     margin: 20px auto;
     padding-left: 1%;
@@ -179,7 +179,7 @@ nav {
 #hero-about {
     height: 600px;
     width: 100%;
-    background: url("https://ov00vo.github.io/thestudio/images/about.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/about.webp") no-repeat center center/cover;
     position: relative;
 }
 
@@ -201,7 +201,7 @@ nav {
 #about-content-box {
     height: 600px;
     width: 90%;
-    background: url("https://ov00vo.github.io/thestudio/images/about_content.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/about_content.webp") no-repeat center center/cover;
     margin: 20px auto;
     padding-left: 1%;
     position: relative;
@@ -243,7 +243,7 @@ aboutbox>h3 {
 #about {
     height: 500px;
     width: 100%;
-    background: url("https://ov00vo.github.io/thestudio/images/about.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/about.webp") no-repeat center center/cover;
     background-position: 100%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
@@ -255,7 +255,7 @@ aboutbox>h3 {
 #signup {
     height: 500px;
     width: 100%;
-    background: url("https://ov00vo.github.io/thestudio/images/signup.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/signup.webp") no-repeat center center/cover;
     background-position: 100%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
@@ -277,7 +277,7 @@ aboutbox>h3 {
 #contact {
     height: 500px;
     width: 100%;
-    background: url("https://ov00vo.github.io/thestudio/images/dumbbell.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/dumbbell.webp") no-repeat center center/cover;
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
