@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for search engines -->
+    <meta name="description" content="Welcome to our premium Fitness Club here in Sweden - Fitness Club">
+    <meta name="keywords" content="fitness, studio, training, yoga, crossfit, health">
+    <!-- Title -->
+    <title>Premium Fitness Club in Sweden - Fitness Club</title>
+    <!-- Favicon -->
+    <link rel="icon" sizes="16x16" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Header -->
+        <!-- Credit Codeinstitute -->
+        <a href="index.html">
+            <h1 id="logo">Fitness Club - Sweden</h1>
+        </a>
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- End credit codeinstitute -->
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Hero -->
+        <section id="hero">
+            <div id="hero-text">
+                <h2>Get fit today</h2>
+                <h1>Fitness Studio<h2>
+            </div>
+        </section>
+<!-- Main content -->
+<main>
+  <section id="signup">
+    <form
+      id="signup-form"
+      method="POST"
+      action="https://formdump.codeinstitute.net"
+    >
+      <h2><i class="fa-solid fa-heartbeat"></i> Let's get you signed up!</h2>
+      <label for="first_name">First Name</label>
+      <input
+        type="text"
+        name="first_name"
+        id="first_name"
+        class="text-input"
+        required
+      />
+      <br />
+      <label for="last_name">Last Name</label>
+      <input
+        type="text"
+        name="last_name"
+        id="last_name"
+        class="text-input"
+        required
+      />
+      <br />
+      <label for="email_address">Email Address</label>
+      <input
+        type="email"
+        name="email_address"
+        id="email_address"
+        class="text-input"
+        required
+      />
+      <br />
+
+      <!-- Start Date Selector -->
+      <label for="start_date">Start Date</label>
+      <input
+        type="date"
+        name="start_date"
+        id="start_date"
+        class="date-input"
+        required
+      />
+      <br />
+
+      <!-- Membership Options -->
+      <label for="membership">Select Membership</label>
+      <select name="membership" id="membership" required>
+        <option value="basic">Basic (450 SEK/month)</option>
+        <option value="standard">Standard (750 SEK/month)</option>
+        <option value="premium">Premium (950 SEK/month)</option>
+      </select>
+      <br />
+
+      <!-- Payment Frequency -->
+      <label for="payment_frequency">Payment Frequency</label>
+      <input
+        type="radio"
+        name="payment_frequency"
+        id="monthly"
+        value="monthly"
+        required
+      />
+      <label for="monthly">Monthly</label>
+      <input
+        type="radio"
+        name="payment_frequency"
+        id="annual"
+        value="annual"
+        required
+      />
+      <label for="annual">Annual</label>
+      <br />
+
+      <!-- Age Span Selector -->
+      <label for="age_span">Select Age Span</label>
+      <select name="age_span" id="age_span" required>
+        <option value="20-40">20-40</option>
+        <option value="41-60">41-60</option>
+        <option value="61-70">61-70</option>
+      </select>
+      <br />
+
+      <div class="radio-buttons">
+        <div>
+          <label for="road">Road</label>
+          <input
+            type="radio"
+            name="running_preference"
+            id="road"
+            value="road"
+            required
+            checked
+          />
+        </div>
+        <div>
+          <label for="trail">Trail</label>
+          <input
+            type="radio"
+            name="running_preference"
+            id="trail"
+            value="trail"
+            required
+          />
+        </div>
+        <div>
+          <label for="both">Both</label>
+          <input
+            type="radio"
+            name="running_preference"
+            id="both"
+            value="both"
+            required
+          />
+        </div>
+      </div>
+      <button type="submit" class="join-button">Let's Run!</button>
+    </form>
+  </section>
+</main>
+<!-- Additional Footer Content -->
+<footer>
+    <ul id="socialmedia">
+        <li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page (opens in a new tab)">
+                <i class="fa-brands fa-facebook fa-beat-fade"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Twitter page (opens in a new tab)">
+                <i class="fa-brands fa-twitter fa-beat-fade"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                aria-label="Visit our Instagram page (opens in a new tab)">
+                <i class="fa-brands fa-instagram fa-beat-fade"></i>
+            </a>
+        <li>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                aria-label="Visit our YouTube page (opens in a new tab)">
+                <i class="fa-brands fa-youtube fa-beat-fade"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener"
+                aria-label="Visit our TikTok page (opens in a new tab)">
+                <i class="fa-brands fa-tiktok fa-beat-fade"></i>
+            </a>
+        </li>
+
+        <div></div>
+        </li>
+    </ul>
+    <style>
+        h3 {
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        h3 {
+            text-align: center;
+        }
+    </style>
+
+
+
+
+</footer>
+<!-- Font Awesome kit -->
+<script src="https://kit.fontawesome.com/7dd2cb17e4.js" crossorigin="anonymous"></script>
