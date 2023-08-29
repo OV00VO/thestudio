@@ -1,49 +1,29 @@
+/* Credit - Code institute: Project Love Running */
+
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Navbar styles with dropdown toggle */
-nav {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
-}
-
-/* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
-}
-
-/* < Credit - Code institute: Project Love Running */
-
 /* General styles */
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    color: #3a3a3a;
+    letter-spacing: 2px;
+    color: turquoise;
     font-family: 'Archivo Narrow', sans-serif;
 }
-
+    .custom-list {
+            list-style-type: none;
+        }
+}
 h1 {
     font-family: 'Archivo Narrow', sans-serif;
     text-transform: uppercase;
@@ -52,7 +32,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Arhivo Narrow', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: white;
@@ -64,8 +44,12 @@ h3 {
     letter-spacing: 4px;
     color: white;
 }
+.hidden-heading {
+ display:none;   
+}
 
 /* Header */
+
 header {
     background-color: #ffffff;
     color: #2d9d96;
@@ -78,120 +62,148 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
-
 header a {
     text-decoration: none;
     color: inherit;
 }
-
-#menu a {
-    color: teal;
-}
-
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+        font-size: 110%;
+        letter-spacing: 4px;
+        list-style-type: none;
 }
-
 #menu>li {
     margin-bottom: 1em;
 }
-
-.active {
+    .active {
     border-bottom: 1px solid turquoise;
 }
 
+/* Navbar styles with dropdown toggle */
+
 nav {
+            position: absolute;
+            background-color: #ffffff;
+            width: 100%;
+            left: 0;
+            padding: 0 1rem;
+            box-shadow: 0 2px 2px teal;
+            display: none;
+            top: 100%;
+}
+
+/* Nav toggle */
+
+#nav-toggle:checked~nav {
     display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
 }
-
-#menu {
-    display: flex;
+#nav-toggle {
+    display: none;
 }
-
-#menu>li {
-    padding-left: 1rem;
-}
-
 .nav-toggle-label {
-    display: none;
+    font-size: 2rem;
 }
 
-/* Text logo */
-#logo {
-    font-size: relative-size;
-    line-height: 75px;
-    margin: 0 0.5rem;
-}
-
-/* Main content - Hide heading */
-.hidden-heading {
-    display: none;
-}
+/* Hero */
 
 #hero {
-    height: 500px;
+    height: 600px;
     width: 100%;
     background: url("../images/hero.webp") no-repeat center center/cover;
     position: relative;
 }
 
 #hero-box {
-    /* Common styles for both large and small screens */
     background-color: rgba(0, 128, 128, .7);
     font-size: 130%;
     position: absolute;
-    bottom: 30px;
+    bottom: 25px;
     min-height: 150px;
     padding-top: 40px;
     padding-left: 10px;
     border-radius: 25px 50px 25px 50px;
-
-    /* Width for large screens (greater than or equal to 768px) */
-    width: 70%;
 }
+    #hero-box > h2 #hero-box >h3 {
+        color: #ffffff;
+    }
+
+/* motivation */
+
 #motivation {
-    height: 500px;
-    width: 100%;
-    background: url("../images/activity.webp") no-repeat center center/cover;
+    width: 90%;
+    background: url("../images/squat.webp") no-repeat center center/cover;
+    margin: 20px auto;
+    padding-left: 1%;
+    border-radius: 10px 25px 10px 25px;
     position: relative;
 }
-
-#motivation-box {
-    background-color: rgba(0, 128, 128, .7);
-    text-decoration: #ffffff;
-    font-size: 100%;
+/* #motivation::before {
+    content:: "";
     position: absolute;
-    bottom: 70px;
-    width: 80%;
-    min-height: 180px;
-    padding-top: 10px;
-    padding-left: 20px;
-    border-radius: 25px 50px 25px 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.80);
+    z-index: 1;
+    border-radius: 10px 25px 10px 25px;*/
+}
+
+#motivation h2 {
+    color: #2d9d96;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+    position: relative;
+    /* z-index: 2 */
+}
+#motivation-2 {
+        /* height: 600px; */
+        width: 100%;
+        background: url("../images/runner_solo.webp") no-repeat center center/cover;
+        /* opacity: 100%; */
+        margin: 20px auto;
+        padding-left: 1%;
+    }
+    #motivation-2 h2 {
+        color: #2d9d96;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 280%
 }
 #about {
-    height: 500px;
+    height: 600px;
     width: 100%;
-    background: url("../images/activity.webp") no-repeat center center/cover;
+    background: url("../images/about.webp") no-repeat center center/cover;
     position: relative;
 }
+
 #about-box {
-    color: #ffffff;
     background-color: rgba(0, 128, 128, .7);
-    text-decoration: #ffffff;
-    font-size: 100%;
+    font-size: 130%;
     position: absolute;
-    bottom: 70px;
-    width: 80%;
-    min-height: 180px;
-    padding-top: 10px;
-    padding-left: 20px;
+    bottom: 25px;
+    min-height: 150px;
+    padding-top: 40px;
+    padding-left: 10px;
     border-radius: 25px 50px 25px 50px;
+}
+
+#about-box>h2 #about-box>h3 {
+    color: ffffff;
+}
+#about-content{
+    height: 600px;
+    width: 90%;
+    background: url("../images/dumbbell.webp") no-repeat center center/cover;
+    margin: 20px auto;
+        padding-left: 1%;
+    position: relative;
+
+/* #about-content h2 {
+            color: #2d9d96;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 280% */
 }
 #socialmedia {
     text-align: justify;
@@ -207,7 +219,11 @@ nav {
     color: teal;
 }
 
+/* Width for large screens (greater than or equal to 768px) */
+width: 70%;
+
 /* Media query for small screens (less than 768px) */
+
 @media screen and (max-width: 767px) {
     #hero-box {
         width: 70%;
@@ -220,6 +236,7 @@ nav {
 }
 
 /* Media query for large screens (greater than or equal to 768px) */
+
 @media screen and (min-width: 768px) {
     #hero-box {
         width: 70%;
@@ -243,6 +260,9 @@ nav {
 #motivation-box>p {
 color: white;
 }
+#about-box>h2,aboutbox>h3 {
+    color: white;
+}
 
 #about {
     height: 500px;
@@ -254,16 +274,20 @@ color: white;
     position: relative;
 }
 
-/* Main content - Center */
+/* Main content */
+
 main {
+    /* Enlarge main element to push footer down*/
     flex: 1 0 auto;
-    margin-top: 10px;
-    padding-left: 0px;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
 }
 
 /* Form */
+
 #signup {
     height: 500px;
     width: 100%;
@@ -289,7 +313,7 @@ main {
 #contact {
     height: 500px;
     width: 100%;
-    background: url("../images/squat.webp") no-repeat center center/cover;
+    background: url("../images/dumbbell.webp") no-repeat center center/cover;
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
@@ -369,14 +393,6 @@ main {
             padding: 10px;
         }
 
-        /* Style headings for better emphasis */
-        h3 {
-            color: #333;
-            /* Dark gray color for headings */
-            margin-bottom: 10px;
-            /* Add space after each heading */
-        }
-
         /* Style paragraphs for improved line-height */
         p {
             line-height: 1.5;
@@ -391,9 +407,6 @@ main {
             text-align: center;
             /* Center-align the text */
         }
-
-        /* Main content */
-       main {
-            /* Push main content down to accommodate larger header */
-            margin-top: 79px;
             /* Footer */
+                        /* Common styles for both large and small screens */
+                        /* < Credit - Code institute: Project Love Running */

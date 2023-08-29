@@ -42,132 +42,77 @@
     </header>
 <!-- Main content -->
 <main>
-  <section id="signup">
-    <form
-      id="signup-form"
-      method="POST"
-      action="https://formdump.codeinstitute.net">
-      <h2><i class="fa-solid fa-dumbbell fa-bounce"></i> Signup - Start you membership Today!</h2>
-      <label for="first_name">First Name</label>
-      <input
-        type="text"
-        name="first_name"
-        id="first_name"
-        class="text-input"
-        required
-      />
-      <br />
-      <label for="last_name">Last Name</label>
-      <input
-        type="text"
-        name="last_name"
-        id="last_name"
-        class="text-input"
-        required
-      />
-      <br />
-      <label for="email_address">Email Address</label>
-      <input
-        type="email"
-        name="email_address"
-        id="email_address"
-        class="text-input"
-        required
-      />
-      <br/>
+<section id="signup">
+    <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+        <h2><i class="fa-solid fa-dumbbell fa-bounce"></i> Signup - Start your membership Today!</h2>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name" class="text-input" required />
+        <br />
 
-    <!-- Age Span Selector -->
-    <label for="age_span">Select Age Span</label>
-    <select name="age_span" id="age_span" required>
-        <option value="20-40">20-40</option>
-        <option value="41-60">41-60</option>
-        <option value="61-70">61-70</option>
-    </select>
-    <br,br />
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name" class="text-input" required />
+        <br />
 
-      <!-- Start Date Selector -->
-      <label for="start_date">Start Date</label>
-      <input
-        type="date"
-        name="start_date"
-        id="start_date"
-        class="date-input"
-        required
-      />
-      <br,br />
+        <label for="email_address">Email Address</label>
+        <input type="email" name="email_address" id="email_address" class="text-input" required />
+        <br />
 
-      <!-- Membership Options -->
-      <label for="membership">Select Membership</label>
-      <select name="membership" id="membership" required>
-        <option value="basic">Basic (450 SEK/month)</option>
-        <option value="standard">Standard (750 SEK/month)</option>
-        <option value="premium">Premium (950 SEK/month)</option>
-      </select>
-      <br,br, />
+        <!-- Age Span Selector -->
+        <label for="age_span">Select Age Span</label><br />
+        <select name="age_span" id="age_span" required>
+            <option value="20-40">20-40</option>
+            <option value="41-60">41-60</option>
+            <option value="61-70">61-70</option>
+        </select><br />
 
-      <!-- Payment Frequency -->
-      <label for="payment_frequency">Payment Frequency</label>
-      <input
-        type="radio"
-        name="payment_frequency"
-        id="monthly"
-        value="monthly"
-        required
-      />
-      <label for="monthly">Monthly</label>
-      <input
-        type="radio"
-        name="payment_frequency"
-        id="annual"
-        value="annual"
-        required
-      />
-      <label for="annual">Annual (10% reduction)</label>
-      <br />
-<br>
-      <div class="radio-buttons">
-        <div>
-          <label for="Online PT">Online Personal Trainer</label>
-          <input
-            type="radio"
-            name="Membership_selection"
-            id="Online Personal Trainer"
-            value="Online Personal Trainer"
-            required
-            checked
-          />
+        <!-- Start Date Selector -->
+        <label for="start_date">Start Date</label><br />
+        <input type="date" name="start_date" id="start_date" class="date-input" required /><br />
+
+        <!-- Membership Options -->
+        <label for="membership">Select Membership</label><br />
+        <select name="membership" id="membership" required>
+            <option value="basic">Basic (450 SEK/month)</option>
+            <option value="standard">Standard (750 SEK/month)</option>
+            <option value="premium">Premium (950 SEK/month)</option>
+        </select>
+
+        <!-- Payment Frequency -->
+        <label for="payment_frequency">Payment Frequency</label>
+        <input type="radio" name="payment_frequency" id="monthly" value="monthly" required />
+        <label for="monthly">Monthly</label>
+
+        <input type="radio" name="payment_frequency" id="annual" value="annual" required />
+        <label for="annual">Annual (10% reduction)</label>
+
+        <br />
+        <br />
+
+        <div class="radio-buttons">
+            <div>
+                <label for="Online PT">Online Personal Trainer</label>
+                <input type="radio" name="Membership_selection" id="Online Personal Trainer"
+                    value="Online Personal Trainer" required checked />
+            </div>
+            <div>
+                <label for="On Site Personal Trainer">On Site PT</label>
+                <input type="radio" name="Membership_selection" id="On Site Personal Trainer"
+                    value="On Site Personal Trainer" required checked />
+            </div>
+            <div>
+                <label for="No Personal Trainer - 20% Reduction">No Personal Trainer - 20% Reduction</label>
+                <input type="radio" name="Membership_selection" id="No Personal Trainer - 20% Reduction"
+                    value="No Personal Trainer - 20% Reduction" required checked />
+            </div>
         </div>
-        <div>
-          <label for="On Site Personal Trainer">On Site PT</label>
-          <input
-            type="radio"
-            name="Membership_selection"
-            id="On Site Personal Trainer"
-            value="On Site Personal Trainer"
-            required
-            checked
-          />
+        <div class="centered-container">
+            <button type="submit" class="join-button">Activate yourself Now!</button>
         </div>
-        <div>
-          <label for="No Personal Trainer - 20% Reduction">No Personal Trainer - 20% Reduction</label>
-          <input
-            type="radio"
-            name="Membership_selection"
-            id="No Personal Trainer - 20% Reduction"
-            value="No Personal Trainer - 20% Reduction"
-            required
-            checked
-          />
-        </div>
-      </div>
-      <div class=centered-container>
-      <button type="submit" class="join-button">Activate yourself Now!</button>
-    </form>
-  </section>
-</main>
+</section>
+
 <!-- Additional Footer Content -->
 <footer>
-<div class="social-media-container">
+<br><div class="social-media-container">
     <ul id="socialmedia">
         <li>
             <a href="https://www.facebook.com/" target="_blank" rel="noopener"
