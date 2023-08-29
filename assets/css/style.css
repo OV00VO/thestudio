@@ -55,14 +55,14 @@ h2 {
     font-family: 'Merriweather', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525;
+    color: white;
 }
 
 h3 {
     font-family: 'Merriweather', sans-serif;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 4px;
-    color: teal;
+    color: white;
 }
 
 /* Header */
@@ -150,6 +150,7 @@ nav {
     min-height: 150px;
     padding-top: 40px;
     padding-left: 10px;
+    border-radius: 25px 50px 25px 50px;
 
     /* Width for large screens (greater than or equal to 768px) */
     width: 70%;
@@ -171,9 +172,29 @@ nav {
     min-height: 180px;
     padding-top: 10px;
     padding-left: 20px;
+    border-radius: 25px 50px 25px 50px;
+}
+#about {
+    height: 500px;
+    width: 100%;
+    background: url("../images/activity.webp") no-repeat center center/cover;
+    position: relative;
+}
+#about-box {
+    color: #ffffff;
+    background-color: rgba(0, 128, 128, .7);
+    text-decoration: #ffffff;
+    font-size: 100%;
+    position: absolute;
+    bottom: 70px;
+    width: 80%;
+    min-height: 180px;
+    padding-top: 10px;
+    padding-left: 20px;
+    border-radius: 25px 50px 25px 50px;
 }
 #socialmedia {
-    text-align: center;
+    text-align: justify;
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
@@ -236,14 +257,10 @@ color: white;
 /* Main content - Center */
 main {
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 10px;
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
-}
-
-/* Main content */
-main {
-    margin-top: 79px;
 }
 
 /* Form */
@@ -261,6 +278,7 @@ main {
     color: #ffffff;
     background-color: rgba(0, 128, 128, 0.80);
     padding: 30px;
+    border-radius: 25px 50px 25px 50px;
 }
 
 #signup-form>h2 {
@@ -283,6 +301,7 @@ main {
     color: #ffffff;
     background-color: rgba(0, 128, 128, 0.80);
     padding: 30px;
+    border-radius: 25px 50px 25px 50px;
 }
 
 #contact-form>h2 {
@@ -346,8 +365,8 @@ main {
 
         /* Add padding for better readability on large text areas */
 
-        .content2-text {
-            padding: 20px;
+        .motivation-text {
+            padding: 10px;
         }
 
         /* Style headings for better emphasis */
