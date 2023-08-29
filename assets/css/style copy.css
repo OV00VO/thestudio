@@ -151,15 +151,15 @@ nav {
     position: relative;
     /* z-index: 2 */
 }
-#footer {
+#motivation-2 {
         /* height: 600px; */
         width: 100%;
-        background: url("../images/footer.webp") no-repeat center center/cover;
+        background: url("../images/runner_solo.webp") no-repeat center center/cover;
         /* opacity: 100%; */
         margin: 20px auto;
         padding-left: 1%;
     }
-    #footer h2 {
+    #motivation-2 h2 {
         color: #2d9d96;
         margin-bottom: 20px;
         text-align: center;
