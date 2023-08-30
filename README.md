@@ -1,7 +1,7 @@
 
 # Fitness Studio Sweden!
 
-## Link to project: https://github.com/OV00VO/thestudio/index.html
+## Link to project: https://ov00vo.github.io/thestudio/
 ![Mockup of the project](https://github.com/OV00VO/thestudio/assets/136384344/9e12a631-da69-4e7d-af98-faf308adc8dd)
 
 ### About the project
