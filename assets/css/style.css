@@ -1,7 +1,6 @@
-/* Credit: Code institute - Project Love Running - Several changes have been done in the
-.html code and the .css do during this development. Many of these did not act out well in the final styling.
-Therefor i had to use the structural thinking from the Love Running project. To be able to deploy the site 
-and with less error. This is a work in progress and was helpful knowledge.  */
+/* Credit: Code institute and the Project: Love Running - I have donde Several changes have been done in the .html code and the .css do during this development. 
+Many the other tested did not act out well or as I wanted in the final styling. Therefore I had to use the structural thinking and reuse code from the Love Running project. 
+To be able to deploy the site and to do this with less error. This is a work in progress and a first submisson, and it was helpful knowledge trying to put the first part of this site together. */
 
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
@@ -23,9 +22,10 @@ body {
     color: turquoise;
     font-family: 'Archivo Narrow', sans-serif;
 }
-    .custom-list {
-            list-style-type: none;
-        }
+
+.custom-list {
+    list-style-type: none;
+}
 
 h1 {
     font-family: 'Archivo Narrow', sans-serif;
@@ -47,8 +47,9 @@ h3 {
     letter-spacing: 4px;
     color: white;
 }
+
 .hidden-heading {
- display:none;   
+    display: none;
 }
 
 /* Header */
@@ -65,11 +66,13 @@ header {
     justify-content: space-between;
     align-items: baseline;
 }
+
 header a {
     text-decoration: none;
     color: inherit;
 }
-    .active {
+
+.active {
     border-bottom: 1px solid turquoise;
 }
 
@@ -84,17 +87,18 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 /* Navbar styles with dropdown toggle */
 
 nav {
-            position: absolute;
-            background-color: #ffffff;
-            width: 100%;
-            left: 0;
-            padding: 0 1rem;
-            box-shadow: 0 2px 2px teal;
-            display: none;
-            top: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px teal;
+    display: none;
+    top: 100%;
 }
 
 /* Nav toggle */
@@ -102,9 +106,11 @@ nav {
 #nav-toggle:checked~nav {
     display: block;
 }
+
 #nav-toggle {
     display: none;
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
@@ -114,7 +120,7 @@ nav {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/hero.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/hero.webp") no-repeat center center/cover;
     position: relative;
 }
 
@@ -128,15 +134,16 @@ nav {
     padding-left: 10px;
     border-radius: 25px 50px 25px 50px;
 }
-    #hero-box > h2 #hero-box >h3 {
-        color: #ffffff;
-    }
+
+#hero-box>h2 #hero-box>h3 {
+    color: #ffffff;
+}
 
 /* motivation */
 
 #motivation {
     width: 90%;
-    background: url("../images/squat.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/squat.webp") no-repeat center center/cover;
     margin: 20px auto;
     padding-left: 1%;
     border-radius: 10px 25px 10px 25px;
@@ -151,24 +158,27 @@ nav {
     position: relative;
     /* z-index: 2 */
 }
+
 #footer {
-        /* height: 600px; */
-        width: 100%;
-        background: url("../images/footer.webp") no-repeat center center/cover;
-        /* opacity: 100%; */
-        margin: 20px auto;
-        padding-left: 1%;
-    }
-    #footer h2 {
-        color: #2d9d96;
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 280%
+    /* height: 600px; */
+    width: 100%;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/footer.webp") no-repeat center center/cover;
+    /* opacity: 100%; */
+    margin: 20px auto;
+    padding-left: 1%;
 }
+
+#footer h2 {
+    color: #2d9d96;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%
+}
+
 #hero-about {
     height: 600px;
     width: 100%;
-    background: url("../images/about.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/about.webp") no-repeat center center/cover;
     position: relative;
 }
 
@@ -186,14 +196,16 @@ nav {
 #hero-about-content>h2 #about-box>h3 {
     color: ffffff;
 }
-#about-content-box{
+
+#about-content-box {
     height: 600px;
     width: 90%;
-    background: url("../images/about_content.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/about_content.webp") no-repeat center center/cover;
     margin: 20px auto;
-        padding-left: 1%;
+    padding-left: 1%;
     position: relative;
 }
+
 #socialmedia {
     text-align: justify;
     padding: 20px 0;
@@ -208,25 +220,29 @@ nav {
     color: teal;
 }
 
-#hero-box>h2, #hero-box>h3 {
+#hero-box>h2,
+#hero-box>h3 {
     color: #ffffff;
 }
 
-#motivation-box>h2, #motivation-box>h3
-{
+#motivation-box>h2,
+#motivation-box>h3 {
     color: turquoise;
 }
+
 #motivation-box>p {
-color: white;
+    color: white;
 }
-#about-box>h2,aboutbox>h3 {
+
+#about-box>h2,
+aboutbox>h3 {
     color: white;
 }
 
 #about {
     height: 500px;
     width: 100%;
-    background: url("../images/about.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/about.webp") no-repeat center center/cover;
     background-position: 100%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
@@ -238,7 +254,7 @@ color: white;
 #signup {
     height: 500px;
     width: 100%;
-    background: url("../images/signup.webp") no-repeat center center/cover  ;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/signup.webp") no-repeat center center/cover;
     background-position: 100%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
@@ -260,7 +276,7 @@ color: white;
 #contact {
     height: 500px;
     width: 100%;
-    background: url("../images/dumbbell.webp") no-repeat center center/cover;
+    background: url("https://ov00vo.github.io/thestudio/assets/images/dumbbell.webp") no-repeat center center/cover;
     background-size: cover;
     background-position: 75%;
     padding: 20px 10% 0 10%;
@@ -306,12 +322,14 @@ color: white;
     font-size: 100%;
     background-color: teal;
     color: #fafafa;
-} 
- /* Footer */
+}
+
+/* Footer */
 .copyright {
-            text-align: center;
-            /* Center-align the text */
-        }
+    text-align: center;
+    /* Center-align the text */
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -323,33 +341,53 @@ color: white;
         width: fit-content;
         padding-right: 1rem;
     }
- #menu {
-     display: flex;
- }
 
- #menu>li {
-     padding-left: 1rem;
- }
+    #menu {
+        display: flex;
+    }
 
- .nav-toggle-label {
-     display: none;
- }
+    #menu>li {
+        padding-left: 1rem;
+    }
 
-#logo {
-      font-size: 280%;
-      line-height: 75px;
-      margin: 0 0.5rem;
-  }
+    .nav-toggle-label {
+        display: none;
+    }
 
-/* Main content */
-        main {
-/* Push main content down to accommodate larger header */
-            margin-top: 79px;
-        }
-/* Large devices (laptops and desktops, 992px and up) */
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    #motivation-box div {
+        color: #fafafa;
+        background-color: rgba(0, 0, 0, .6);
+        padding: 15px;
+        text-align: center;
+        /* This will not wrap on screens of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+        flex-basis: 200px;
+        flex-grow: 1;
+        /* Creates a grid of meetup time dives over the background image */
+        border: 2px solid white;
+    }
+
+    #motivation-box h3 {
+        /* Override the heading colour set in general styles */
+        color: #fafafa;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+    /* Large devices (laptops and desktops, 992px and up) */
     @media screen and (min-width: 992px) {
         #menu a:hover {
             border-bottom: 1px solid #3a3a3a;
         }
 
-/* < End Credit - Code institute: Project Love Running */
+        /* < End Credit - Code institute: Project Love Running */
